@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import sklearn
 
-df = pd.read_csv('/Users/ernest/Downloads/Math 156/HW 2 Code/wine+quality/winequality-red.csv', delimiter = ";")
+df = pd.read_csv('/Users/ernest/Downloads/Math 156/Math156HW/HW 2 Code/wine+quality/winequality-red.csv', delimiter = ";")
 print(df.head())
 
 from sklearn.model_selection import train_test_split
@@ -99,4 +99,3 @@ print(LMS_RMSE_train)
 # RMSE for test 
 LMS_RMSE_test = mean_squared_error(np.dot(X_test_b, w_0.T), y_test, squared=False)
 print(LMS_RMSE_test)
-
